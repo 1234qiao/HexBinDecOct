@@ -35,4 +35,5 @@ int main(){
 	cin>>k;
 	d=mtoD(m,n);
 	cout<<endl<<Dtom(d,k);
+	getchar();getchar();
 }
