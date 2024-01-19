@@ -27,12 +27,12 @@ int mtoD(int m,string n){
 int main(){
 	int d,m,k;
 	string n;
-	cout<<"请输入原进制";
+	cout<<"请输入原进制：";
 	cin>>m;
-	cout<<"请输入原数";
+	cout<<endl<<"请输入原数：";
 	cin>>n;
-	cout<<"请输入目标进制";
+	cout<<endl<<"请输入目标进制";
 	cin>>k;
 	d=mtoD(m,n);
-	cout<<Dtom(d,k);
+	cout<<endl<<Dtom(d,k);
 }
