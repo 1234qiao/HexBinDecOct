@@ -31,7 +31,7 @@ int main(){
 	cin>>m;
 	cout<<endl<<"请输入原数：";
 	cin>>n;
-	cout<<endl<<"请输入目标进制";
+	cout<<endl<<"请输入目标进制：";
 	cin>>k;
 	d=mtoD(m,n);
 	cout<<endl<<Dtom(d,k);
