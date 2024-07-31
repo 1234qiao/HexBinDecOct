@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 string d="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-string Dtom(int n,int m)
+string Dtom(long long n,long long m)
 {
 	string ans="";
 	while(n!=0){
@@ -10,9 +10,9 @@ string Dtom(int n,int m)
 	}
 	return ans;
 }
-int mtoD(int m,string n){
-	int num=0;
-	for(int i=0;i<n.size();i++){
+int mtoD(long long m,string n){
+	long long num=0;
+	for(long long i=0;i<n.size();i++){
 		if(n[i]>='A'){
 			num*=m;
 			num+=n[i]-'A'+10;
@@ -25,7 +25,7 @@ int mtoD(int m,string n){
 	return num;
 } 
 int main(){
-	int d,m,k;
+	long long d,m,k;
 	string n;
 	cout<<"请输入原进制：";
 	cin>>m;
