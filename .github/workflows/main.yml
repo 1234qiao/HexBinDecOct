@@ -1,0 +1,12 @@
+name: Build
+run-name: build code
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+      uses: actions/checkout@v3
+      run: |
+        sudo apt install mingw-w64 -y
+        x86_64-w64-mingw32-g++ code.cpp -Wall -o code.exe
